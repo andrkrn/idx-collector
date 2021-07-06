@@ -1,0 +1,36 @@
+import { GoogleSpreadsheet } from "google-spreadsheet";
+
+const credentials = JSON.parse(
+  process.env.CREDENTIALS ? process.env.CREDENTIALS : ""
+);
+
+export interface Data {
+  StockCode: string;
+  Close: number;
+}
+
+class Spreadsheet {
+  async updateStockPrice(rows: Data[]) {
+    const doc = new GoogleSpreadsheet(
+      "1hDwgdomqvRW3n2TLCrLn6lHu4RoeXq0UoghEIKiPniU"
+    );
+
+    await doc.useServiceAccountAuth(credentials);
+
+    await doc.loadInfo();
+
+    const sheet = doc.sheetsByTitle["Price"];
+
+    if (sheet) {
+      await sheet.updateProperties({ title: "Price Backup" });
+    }
+
+    const newSheet = await doc.addSheet({ headerValues: ["stock", "price"] });
+    await newSheet.updateProperties({ title: "Price" });
+    await newSheet.addRows(rows);
+
+    await sheet.delete();
+  }
+}
+
+export default Spreadsheet;
