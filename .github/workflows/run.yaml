@@ -1,0 +1,17 @@
+name: Run
+on:
+  push:
+    branches:
+      - master
+  pull-request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: run
+        uses: ./
+        with:
+          args: node /app/dist/index.js
