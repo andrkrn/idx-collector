@@ -16,3 +16,4 @@ jobs:
           args: node /app/dist/index.js
         env:
           CREDENTIALS: ${{ secrets.CREDENTIALS }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
