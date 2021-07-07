@@ -11,9 +11,7 @@ export interface Data {
 
 class Spreadsheet {
   async updateStockPrice(rows: Data[]) {
-    const doc = new GoogleSpreadsheet(
-      "1hDwgdomqvRW3n2TLCrLn6lHu4RoeXq0UoghEIKiPniU"
-    );
+    const doc = new GoogleSpreadsheet(process.env.SHEET_ID);
 
     await doc.useServiceAccountAuth(credentials);
 
