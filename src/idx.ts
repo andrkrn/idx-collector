@@ -50,7 +50,16 @@ class IDX {
   }
 
   async collect() {
-    const browser = await puppeteer.launch({ headless: false });
+    console.log(process.env.PUPPETEER_EXECUTABLE_PATH);
+    const browser = await puppeteer.launch({
+      args: [
+        "--no-sandbox",
+        "--disabled-setupid-sandbox",
+        "--disable-dev-shm-usage",
+      ],
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+      headless: false,
+    });
     const page = await browser.newPage();
     const targetUrl =
       "https://www.idx.co.id/umbraco/Surface/TradingSummary/GetStockSummary";
