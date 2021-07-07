@@ -25,7 +25,9 @@ class Spreadsheet {
       await sheet.updateProperties({ title: "Price Backup" });
     }
 
-    const newSheet = await doc.addSheet({ headerValues: ["stock", "price"] });
+    const newSheet = await doc.addSheet({
+      headerValues: ["StockCode", "Close"],
+    });
     await newSheet.updateProperties({ title: "Price" });
     await newSheet.addRows(rows);
 
