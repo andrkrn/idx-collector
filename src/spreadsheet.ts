@@ -4,9 +4,8 @@ const credentials = JSON.parse(
   process.env.CREDENTIALS ? process.env.CREDENTIALS : ""
 );
 
-export interface Data {
-  StockCode: string;
-  Close: number;
+interface Data {
+  [key: string]: string | number | boolean;
 }
 
 class Spreadsheet {

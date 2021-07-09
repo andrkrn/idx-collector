@@ -1,11 +1,15 @@
 import puppeteer from "puppeteer";
 
 interface Summary {
-  data: Stock[];
+  data: Data[];
   draw: number;
   recordsFiltered: number;
   recordsTotal: number;
 }
+
+type Data = {
+  [key in keyof Stock]: string | number;
+};
 
 interface Stock {
   Bid: number;
@@ -43,7 +47,7 @@ interface Stock {
 }
 
 class IDX {
-  public stocks: Stock[];
+  public stocks: Data[];
 
   constructor() {
     this.stocks = [];
