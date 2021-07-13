@@ -1,11 +1,13 @@
-name: Dockerhub
+name: dockerhub
 on:
   push:
-    branch: master
+    branches:
+      - master
 
 jobs:
-  test:
+  build-and-push:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     timeout-minutes: 10
     steps:
       - name: checkout
@@ -21,5 +23,5 @@ jobs:
           context: .
           push: true
           tags: |
-            andrkrn/idx-collector:latest
-            andrkrn/idx-collector:${{ github.sha }}
+            andrkrn/idx-collector:${{ github.ref }}
+            andrkrn/idx-collector:${{ github.ref }}.${{ github.sha }}
