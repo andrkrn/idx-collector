@@ -22,5 +22,4 @@ jobs:
           context: .
           push: true
           tags: |
-            andrkrn/idx-collector:${{ github.ref }}
-            andrkrn/idx-collector:${{ github.ref }}.${{ github.sha }}
+            andrkrn/idx-collector:${{ github.sha }}
