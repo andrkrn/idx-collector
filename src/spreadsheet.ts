@@ -1,4 +1,5 @@
 import { GoogleSpreadsheet } from "google-spreadsheet";
+import { Stock } from "./idx";
 
 const credentials = JSON.parse(
   process.env.CREDENTIALS ? process.env.CREDENTIALS : ""
@@ -8,6 +9,14 @@ interface Data {
   [key: string]: string | number | boolean;
 }
 
+type HeaderValues = (keyof Stock)[];
+
+const HEADER_VALUES: HeaderValues = [
+  "StockCode",
+  "Close",
+  "ForeignBuy",
+  "ForeignSell",
+];
 class Spreadsheet {
   async updateStockPrice(rows: Data[]) {
     const doc = new GoogleSpreadsheet(process.env.SHEET_ID);
@@ -16,19 +25,17 @@ class Spreadsheet {
 
     await doc.loadInfo();
 
-    const sheet = doc.sheetsByTitle["Price"];
+    let sheet = doc.sheetsByTitle["Price"];
 
-    if (sheet) {
-      await sheet.updateProperties({ title: "Price Backup" });
+    if (sheet === undefined) {
+      sheet = await doc.addSheet({
+        title: "Price",
+        headerValues: HEADER_VALUES,
+      });
     }
 
-    const newSheet = await doc.addSheet({
-      headerValues: ["StockCode", "Close"],
-    });
-    await newSheet.updateProperties({ title: "Price" });
-    await newSheet.addRows(rows);
-
-    await sheet.delete();
+    await sheet.clear();
+    await sheet.addRows(rows);
   }
 }
 

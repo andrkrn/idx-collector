@@ -11,7 +11,7 @@ type Data = {
   [key in keyof Stock]: string | number;
 };
 
-interface Stock {
+export interface Stock {
   Bid: number;
   BidVolume: number;
   Change: number;
