@@ -12,8 +12,8 @@ jobs:
       credentials:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      env:
+        CREDENTIALS: ${{ secrets.CREDENTIALS }}
+        SHEET_ID: ${{ secrets.SHEET_ID }}
     steps:
       - run: node /app/dist/index.js
-        env:
-          CREDENTIALS: ${{ secrets.CREDENTIALS }}
-          SHEET_ID: ${{ secrets.SHEET_ID }}
