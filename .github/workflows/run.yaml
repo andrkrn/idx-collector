@@ -7,13 +7,13 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container:
-      image: andrkrn/idx-collector
-      credentials:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_PASSWORD }}
-      env:
-        CREDENTIALS: ${{ secrets.CREDENTIALS }}
-        SHEET_ID: ${{ secrets.SHEET_ID }}
     steps:
-      - run: node /app/dist/index.js
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: run
+        uses: ./
+        with:
+          args: node /app/dist/index.js
+        env:
+          CREDENTIALS: ${{ secrets.CREDENTIALS }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
