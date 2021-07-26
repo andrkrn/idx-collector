@@ -35,6 +35,7 @@ class Spreadsheet {
     }
 
     await sheet.clear();
+    await sheet.setHeaderRow(HEADER_VALUES);
     await sheet.addRows(rows);
   }
 }
