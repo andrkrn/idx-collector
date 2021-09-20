@@ -1,4 +1,4 @@
-FROM node:14.16.0-buster
+FROM node:14.17.6-buster
 
 RUN  apt-get update \
      # See https://crbug.com/795759
