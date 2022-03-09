@@ -39,10 +39,10 @@
   resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.1.5.tgz#2bdc6f9f5372551e0506cb6ef3f562adcf44fc2e"
   integrity sha512-7N+mDtZ1pmya2RRFPPl4KYc2TRgiqCNBLUZfyrKfER+u751JgCO+C24/LzF70UmUm/zhHUbzRZ5mtfaxekQ1ZQ==
 
-"@types/node@*", "@types/node@^14":
-  version "14.17.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.4.tgz#218712242446fc868d0e007af29a4408c7765bc0"
-  integrity sha512-8kQ3+wKGRNN0ghtEn7EGps/B8CzuBz1nXZEIGGLP2GnwbqYn4dbTs7k+VKLTq1HvZLRCIDtN3Snx1Ege8B7L5A==
+"@types/node@*", "@types/node@^16.0.0":
+  version "16.11.26"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.26.tgz#63d204d136c9916fb4dcd1b50f9740fe86884e47"
+  integrity sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==
 
 "@types/yauzl@^2.9.1":
   version "2.9.2"
