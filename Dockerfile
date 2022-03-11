@@ -1,4 +1,4 @@
-FROM node:17.6.0-buster
+FROM node:17.7.1-buster
 
 RUN  apt-get update \
      # See https://crbug.com/795759
