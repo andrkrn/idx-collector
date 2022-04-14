@@ -34,10 +34,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
-"@types/google-spreadsheet@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.0.tgz#85cf291888aec7a063249cf0ec2b3a58f6ea2527"
-  integrity sha512-WUY/RiXrANEZcUiil9mY4xB5EJPWMjJO0kkSdug0rRVwby4vKzb4DoV10AVuyT72WqDQ5iLK7OoO47tW3ll9Qw==
+"@types/google-spreadsheet@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.2.1.tgz#b53fcd02cb1c703db4b8c35752ebc0a7ec316f0c"
+  integrity sha512-k9fMPyRJuWFoRiD4ZU2xTJTBykeXIh+ittw59UHGvNVkyu0b82DorkEJe36LBlaLkqD2qPBAunVz6JZRMFvWIA==
 
 "@types/node@*", "@types/node@^16.0.0":
   version "16.11.26"
