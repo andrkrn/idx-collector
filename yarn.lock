@@ -318,10 +318,10 @@ google-p12-pem@^3.0.3:
   dependencies:
     node-forge "^0.10.0"
 
-google-spreadsheet@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/google-spreadsheet/-/google-spreadsheet-3.2.0.tgz#ce8aa75c15705aa950ad52b091a6fc4d33dcb329"
-  integrity sha512-z7XMaqb+26rdo8p51r5O03u8aPLAPzn5YhOXYJPcf2hdMVr0dUbIARgdkRdmGiBeoV/QoU/7VNhq1MMCLZv3kQ==
+google-spreadsheet@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/google-spreadsheet/-/google-spreadsheet-3.3.0.tgz#725aecf9ea67ff8b8c45ddaf714f78f3e99db6a1"
+  integrity sha512-ahmRNh14s1i3phfvbF2mxen1lohWJpUaFWgsU6P6bXu7QrmxMaim1Ys/7BU4W5yucWCzphoIrHMbrbeIR5K9mw==
   dependencies:
     axios "^0.21.4"
     google-auth-library "^6.1.3"
