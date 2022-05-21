@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/google-spreadsheet": "3.2.2",
-    "ts-node": "10.7.0"
+    "ts-node": "10.8.0"
   },
   "resolutions": {
     "@types/node": "^16.0.0"
