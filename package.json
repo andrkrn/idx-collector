@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "google-spreadsheet": "3.3.0",
-    "puppeteer": "19.2.2",
+    "puppeteer": "19.3.0",
     "typescript": "4.9.3"
   },
   "devDependencies": {
