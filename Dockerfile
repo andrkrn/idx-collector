@@ -1,4 +1,4 @@
-FROM node:19.6.1-buster
+FROM node:19.7.0-buster
 
 RUN  apt-get update \
      # See https://crbug.com/795759
