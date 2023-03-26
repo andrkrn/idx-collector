@@ -74,9 +74,9 @@
   integrity sha512-nvwAEr+uKK/IQ0hfH3agtRX2RnKI5+D/pUnDpJ/+D8nSbrvvV+fgyA8lGjoAHIHcls19NTzkQBm1T7vbF5iy8A==
 
 "@types/node@*", "@types/node@^16.0.0":
-  version "16.18.20"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.20.tgz#8d69761aca4cf40a54dcd5c70ed313f393f8d6b5"
-  integrity sha512-9fH66vSJnF563exTu3y1g2IbDz1vCj01Lbqms97r8j0qzfFisT2biypSfybVv/eYrtTB74x9xQTdRU8RyMiRrg==
+  version "16.18.21"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.21.tgz#061e3b51668f74bf3aaa44450dcf0acd625841f7"
+  integrity sha512-TassPGd0AEZWA10qcNnXnSNwHlLfSth8XwUaWc3gTSDmBz/rKb613Qw5qRf6o2fdRBrLbsgeC9PMZshobkuUqg==
 
 "@types/yauzl@^2.9.1":
   version "2.10.0"
