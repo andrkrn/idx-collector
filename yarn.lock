@@ -48,10 +48,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@puppeteer/browsers@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@puppeteer/browsers/-/browsers-0.3.0.tgz#6139f15cbfc0eac249b817f33d0198840ce9509f"
-  integrity sha512-/arZ+avSn3SlhgqzbJPCdFWj8/65f5kZrBM3UUkGIJZz3inVMvPTXKfb1A6Ynce4ESkNAvPKlD6Sjpb7tPF/mw==
+"@puppeteer/browsers@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@puppeteer/browsers/-/browsers-0.3.1.tgz#21d43c49f6f8bb5fa905b322d73c11fca9b515bd"
+  integrity sha512-WTFVqWY7ipI+CsJRb6vEddYJ/lMl2bHYP5BjFDBM9JMKPjJNT4psXz6DLuJpi3EkG80Q0ef5Azzv3gKu9MvMUg==
   dependencies:
     debug "4.3.4"
     extract-zip "2.0.1"
@@ -673,12 +673,12 @@ puppeteer-core@19.8.1:
     unbzip2-stream "1.4.3"
     ws "8.13.0"
 
-puppeteer@19.8.1:
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-19.8.1.tgz#997b947e79dca61b539fedc350d98616169411c2"
-  integrity sha512-VdIlg/dvlamGvoXcnBu6EylIsu8OU7ofuhR9OmVa/8muGaWdE5d6O2MYLAoaVS+c5hEBMyF/ozTBbMmyRMjAdQ==
+puppeteer@19.8.2:
+  version "19.8.2"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-19.8.2.tgz#e8a3a9aa725b5d445f97454cf13ad9007709576b"
+  integrity sha512-LPdNVYMR6ddp4YS3GK1bqKsasCJj1aZjt9dNOKcnzKezuMoishlHY6bCnFLjTc34iqnGzIrJp07TQ9M+aML2+g==
   dependencies:
-    "@puppeteer/browsers" "0.3.0"
+    "@puppeteer/browsers" "0.3.1"
     cosmiconfig "8.1.3"
     https-proxy-agent "5.0.1"
     progress "2.0.3"
