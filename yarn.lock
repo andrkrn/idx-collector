@@ -459,10 +459,10 @@ get-uri@^6.0.1:
     debug "^4.3.4"
     fs-extra "^8.1.0"
 
-google-spreadsheet@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/google-spreadsheet/-/google-spreadsheet-4.0.1.tgz#e021d87d95ee0e56a150ed696684348b254dc2da"
-  integrity sha512-8Sv9oV+H5ePQVi9mXbwuxBUt+R1lLPphL6P8qDni7JZCyscte2vzr9P9AtFBv6hJR/Vc69QGx66p0v2vuTdaEA==
+google-spreadsheet@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/google-spreadsheet/-/google-spreadsheet-4.0.2.tgz#9feddb65ba5a37e16fde9e4f43ca934d0e32e6cd"
+  integrity sha512-A5Y3HdgQhwnc16cwfwIdMS1FR2rAVRBa+4RLO8jbuUPYWOGMTPWqhl1mkIB5XOT+w69znoXMHeNgaNbKZp0J2g==
   dependencies:
     axios "^1.4.0"
     lodash "^4.17.21"
