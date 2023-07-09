@@ -19,6 +19,6 @@
     "ts-node": "10.9.1"
   },
   "resolutions": {
-    "@types/node": "^16.0.0"
+    "@types/node": "^18.0.0"
   }
 }
