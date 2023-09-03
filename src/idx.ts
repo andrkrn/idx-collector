@@ -66,10 +66,10 @@ class IDX {
     });
     const page = await browser.newPage();
     const targetUrl =
-      "https://www.idx.co.id/umbraco/Surface/TradingSummary/GetStockSummary";
+      "https://www.idx.co.id/primary/TradingSummary/GetStockSummary";
 
     await page.goto(
-      "https://www.idx.co.id/en-us/market-data/trading-summary/stock-summary/"
+      "https://www.idx.co.id/en/market-data/trading-summary/stock-summary"
     );
 
     await page.reload();
