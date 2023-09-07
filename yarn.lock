@@ -500,10 +500,10 @@ google-auth-library@^9.0.0:
     jws "^4.0.0"
     lru-cache "^6.0.0"
 
-google-spreadsheet@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/google-spreadsheet/-/google-spreadsheet-4.0.2.tgz#9feddb65ba5a37e16fde9e4f43ca934d0e32e6cd"
-  integrity sha512-A5Y3HdgQhwnc16cwfwIdMS1FR2rAVRBa+4RLO8jbuUPYWOGMTPWqhl1mkIB5XOT+w69znoXMHeNgaNbKZp0J2g==
+google-spreadsheet@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/google-spreadsheet/-/google-spreadsheet-4.0.3.tgz#966003bdaf3f017d09e089440e60a56e2bf882ed"
+  integrity sha512-mJQzzSqdyxZXhAvW3HNYBNZhGERabR38BR1QgLUEacanKoZvSKgs/2YvaSXHTCnNXcft45XLmImmKjWnHXXRvQ==
   dependencies:
     axios "^1.4.0"
     lodash "^4.17.21"
