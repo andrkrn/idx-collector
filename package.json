@@ -10,7 +10,7 @@
     "collect": "ts-node src/index.ts"
   },
   "dependencies": {
-    "google-auth-library": "^9.0.0",
+    "google-auth-library": "^8.9.0",
     "google-spreadsheet": "4.0.3",
     "puppeteer": "21.1.1"
   },
