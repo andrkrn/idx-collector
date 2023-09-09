@@ -21,3 +21,6 @@ jobs:
         run: yarn check
       - name: collect
         run: yarn collect
+        env:
+          CREDENTIALS: ${{ secrets.CREDENTIALS }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
