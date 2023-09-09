@@ -54,7 +54,6 @@ class IDX {
   }
 
   async collect() {
-    console.log(process.env.PUPPETEER_EXECUTABLE_PATH);
     const browser = await puppeteer.launch({
       args: [
         "--no-sandbox",

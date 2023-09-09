@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: run latest docker image
-        run: docker run andrkrn/idx-collector:latest -e CREDENTIALS=$CREDENTIALS -e SHEET_ID=$SHEET_ID
+        run: docker run -e CREDENTIALS=$CREDENTIALS -e SHEET_ID=$SHEET_ID andrkrn/idx-collector:latest
         env:
           CREDENTIALS: ${{ secrets.CREDENTIALS }}
           SHEET_ID: ${{ secrets.SHEET_ID }}
