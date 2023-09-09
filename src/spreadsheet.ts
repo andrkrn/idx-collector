@@ -36,17 +36,20 @@ class Spreadsheet {
     await doc.loadInfo();
 
     let sheet = doc.sheetsByTitle["Price"];
-
     if (sheet === undefined) {
       sheet = await doc.addSheet({
         title: "Price",
-        headerValues: HEADER_VALUES,
       });
     }
-
-    await sheet.clear();
-    await sheet.setHeaderRow(HEADER_VALUES);
+    await sheet.setHeaderRow(HEADER_VALUES, 2);
+    await sheet.clearRows();
     await sheet.addRows(rows);
+
+    await sheet.clearRows({ start: 1, end: 1 }); // clear first row
+    await sheet.loadCells("A1:Z1");
+    const cellA1 = sheet.getCell(0, 0);
+    cellA1.value = `Last updated: ${new Date().toISOString()}`;
+    await cellA1.save();
   }
 }
 

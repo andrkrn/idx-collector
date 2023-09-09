@@ -8,13 +8,8 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    steps:
-      - name: checkout
-        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4
-      - name: run
-        uses: ./
-        with:
-          args: node /app/dist/index.js
-        env:
-          CREDENTIALS: ${{ secrets.CREDENTIALS }}
-          SHEET_ID: ${{ secrets.SHEET_ID }}
+    container:
+      image: andrkrn/idx-collector:latest
+      env:
+        CREDENTIALS: ${{ secrets.CREDENTIALS }}
+        SHEET_ID: ${{ secrets.SHEET_ID }}
