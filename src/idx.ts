@@ -61,7 +61,7 @@ class IDX {
         "--disable-dev-shm-usage",
       ],
       executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
-      headless: false,
+      headless: "new",
     });
     const page = await browser.newPage();
     const targetUrl =

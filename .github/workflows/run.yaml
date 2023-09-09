@@ -9,8 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: run latest docker image
-        run: docker run -e CREDENTIALS="$CREDENTIALS" -e SHEET_ID="$SHEET_ID" andrkrn/idx-collector:latest yarn collect
-        env:
-          CREDENTIALS: ${{ secrets.CREDENTIALS }}
-          SHEET_ID: ${{ secrets.SHEET_ID }}
+      - name: checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: "yarn"
+      - name: yarn install
+        run: yarn install --frozen-lockfile
+      - name: yarn check
+        run: yarn check
+      - name: collect
+        run: yarn collect
