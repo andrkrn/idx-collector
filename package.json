@@ -19,6 +19,6 @@
     "typescript": "5.2.2"
   },
   "resolutions": {
-    "@types/node": "^20.0.0"
+    "@types/node": "^24.0.0"
   }
 }
